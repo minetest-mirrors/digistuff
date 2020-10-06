@@ -1,5 +1,5 @@
 minetest.register_tool("digistuff:channelcopier",{
-	description = "Digilines Channel Copier (shift-click to copy, click to paste)",
+	description = "Digilines Channel Copier (sneak-click to copy, click to paste)",
 	inventory_image = "digistuff_channelcopier.png",
 	on_use = function(itemstack,player,pointed)
 		if not (pointed and pointed.under) then return itemstack end
