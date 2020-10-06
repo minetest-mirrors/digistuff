@@ -25,7 +25,7 @@ minetest.register_tool("digistuff:channelcopier",{
 				if minetest.registered_nodes[node.name]._digistuff_channelcopier_fieldname then
 					local channel = itemstack:get_meta():get_string("channel")
 					if type(channel) ~= "string" or channel == "" then
-						minetest.chat_send_player(name,minetest.colorize("#FF5555","Error:").." No channel has been set yet. Shift-click to copy one.")
+						minetest.chat_send_player(name,minetest.colorize("#FF5555","Error:").." No channel has been set yet. Sneak-click to copy one.")
 						return itemstack
 					end
 					local oldchannel = minetest.get_meta(pos):get_string(minetest.registered_nodes[node.name]._digistuff_channelcopier_fieldname)
